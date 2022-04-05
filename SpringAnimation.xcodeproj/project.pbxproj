@@ -56,15 +56,47 @@
 		D3EFCDFD27FCBD6E00FEB1F3 /* SpringAnimation */ = {
 			isa = PBXGroup;
 			children = (
-				D3EFCDFE27FCBD6E00FEB1F3 /* AppDelegate.swift */,
-				D3EFCE0027FCBD6E00FEB1F3 /* SceneDelegate.swift */,
-				D3EFCE0227FCBD6E00FEB1F3 /* ViewController.swift */,
-				D3EFCE0427FCBD6E00FEB1F3 /* Main.storyboard */,
-				D3EFCE0727FCBD6F00FEB1F3 /* Assets.xcassets */,
-				D3EFCE0927FCBD6F00FEB1F3 /* LaunchScreen.storyboard */,
-				D3EFCE0C27FCBD6F00FEB1F3 /* Info.plist */,
+				D3EFCE1427FCCCE400FEB1F3 /* App */,
+				D3EFCE1527FCCCE800FEB1F3 /* ViewControllers */,
+				D3EFCE1327FCCCD500FEB1F3 /* Storyboards */,
+				D3EFCE1227FCCCCB00FEB1F3 /* Resources */,
 			);
 			path = SpringAnimation;
+			sourceTree = "<group>";
+		};
+		D3EFCE1227FCCCCB00FEB1F3 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D3EFCE0727FCBD6F00FEB1F3 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		D3EFCE1327FCCCD500FEB1F3 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				D3EFCE0427FCBD6E00FEB1F3 /* Main.storyboard */,
+				D3EFCE0927FCBD6F00FEB1F3 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		D3EFCE1427FCCCE400FEB1F3 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				D3EFCDFE27FCBD6E00FEB1F3 /* AppDelegate.swift */,
+				D3EFCE0027FCBD6E00FEB1F3 /* SceneDelegate.swift */,
+				D3EFCE0C27FCBD6F00FEB1F3 /* Info.plist */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		D3EFCE1527FCCCE800FEB1F3 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				D3EFCE0227FCBD6E00FEB1F3 /* ViewController.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -289,7 +321,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = S975MC8VZ3;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = SpringAnimation/Info.plist;
+				INFOPLIST_FILE = SpringAnimation/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -318,7 +350,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = S975MC8VZ3;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = SpringAnimation/Info.plist;
+				INFOPLIST_FILE = SpringAnimation/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
