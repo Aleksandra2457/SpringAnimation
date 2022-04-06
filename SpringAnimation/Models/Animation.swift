@@ -16,12 +16,13 @@ struct Animation {
     let duration: Double
     let delay: Double
     
-    static func returnParametersForAnimation() -> Animation {
-        return Animation(
+    static func returnRandomAnimation() -> Animation {
+        Animation(
             preset: Spring.AnimationPreset.allCases.randomElement() ?? .fadeIn,
             curve: Spring.AnimationCurve.allCases.randomElement() ?? .easeIn,
-            force: Double.random(in: 0.2...1),
-            duration: Double.random(in: 0.5...3),
-            delay: Double.random(in: 0.5...1.5))
+            force: Double.random(in: 0.2...0.5),
+            duration: Double.random(in: 1...3),
+            delay: Double.random(in: 0.5...1.2))
     }
+    
 }

@@ -16,7 +16,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mFd-xh-Qmj">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mFd-xh-Qmj" customClass="SpringView" customModule="Spring">
                                 <rect key="frame" x="61.666666666666657" y="91" width="291" height="179"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="HcT-bE-Sja">
@@ -55,7 +55,7 @@
                                         </subviews>
                                     </stackView>
                                 </subviews>
-                                <color key="backgroundColor" systemColor="systemGray2Color"/>
+                                <color key="backgroundColor" systemColor="systemGrayColor"/>
                                 <constraints>
                                     <constraint firstItem="HcT-bE-Sja" firstAttribute="leading" secondItem="mFd-xh-Qmj" secondAttribute="leading" constant="8" id="OAX-UO-BXO"/>
                                     <constraint firstAttribute="bottom" secondItem="HcT-bE-Sja" secondAttribute="bottom" constant="8" id="VST-fW-8au"/>
@@ -69,7 +69,7 @@
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Ji-b7-1rZ">
                                 <rect key="frame" x="61.666666666666657" y="770" width="291" height="36"/>
-                                <color key="backgroundColor" systemColor="systemGray2Color"/>
+                                <color key="backgroundColor" systemColor="systemGrayColor"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="Run">
@@ -80,10 +80,13 @@
                                         <integer key="value" value="10"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="runAnimationButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0ag-KY-btz"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="4Ji-b7-1rZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="428-ez-iFn"/>
                             <constraint firstItem="mFd-xh-Qmj" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.199777" id="OD2-iY-JNc"/>
@@ -94,18 +97,23 @@
                             <constraint firstItem="mFd-xh-Qmj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="uZV-kR-err"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="animatedView" destination="mFd-xh-Qmj" id="0Ml-uT-tfC"/>
+                        <outlet property="animationCurveLabel" destination="6pS-5a-cNm" id="S7u-cr-6ZV"/>
+                        <outlet property="animationDelayLabel" destination="7sR-Vb-7cG" id="gIB-i9-0wJ"/>
+                        <outlet property="animationDurationLabel" destination="71M-HW-iFQ" id="JVc-hm-nf3"/>
+                        <outlet property="animationForceLabel" destination="8tL-lu-WbV" id="PJQ-ZX-gTe"/>
+                        <outlet property="animationPresetLabel" destination="xPa-wI-sh9" id="DpU-7D-Mtk"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="18.840579710144929" y="66.964285714285708"/>
+            <point key="canvasLocation" x="348" y="73"/>
         </scene>
     </scenes>
     <resources>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemGray2Color">
-            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <systemColor name="systemGrayColor">
+            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
