@@ -20,7 +20,7 @@ class AnimationViewController: UIViewController {
     @IBOutlet var animationDelayLabel: UILabel!
 
     // MARK: - Private Properties
-    var animation = Animation.returnRandomAnimation()
+    private var animation = Animation.returnRandomAnimation()
     
     // MARK: - Life Cycles Methods
     override func viewDidLoad() {
